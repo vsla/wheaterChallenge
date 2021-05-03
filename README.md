@@ -36,7 +36,6 @@ The following tools were used to develop this project:
 ## 🔖 Libraries Used
 
 - Material Ui
-- React router
 - Axios
 
 ## ⚡ Running the app
