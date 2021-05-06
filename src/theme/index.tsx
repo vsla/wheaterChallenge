@@ -20,6 +20,9 @@ const Theme = createMuiTheme({
       minHeight: 80,
     },
   },
+  typography:{
+    fontFamily: 'Roboto'
+  },
   overrides: {
     MuiButton: {
       containedPrimary: {

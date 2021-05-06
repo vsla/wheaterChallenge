@@ -1,9 +1,9 @@
-import moment, { Moment } from "moment";
+import * as moment from "moment";
 
 export interface wheaterInterface {
   min: number;
   max: number;
-  date: string,
+  date: moment.Moment;
   temp: number;
 }
 
@@ -11,7 +11,7 @@ export type wheaterWeekInterface = wheaterInterface[];
 
 export type cityInterface = string;
 
-export interface stateInterface  {
-  weeek: Array<wheaterInterface> | [];
-  city: cityInterface;
+export interface stateInterface extends wheaterInterface {
+  // weeek: Array<wheaterInterface> | [];
+  // city: cityInterface;
 }
