@@ -20,12 +20,19 @@ export default function ActualDay({
 }: Props) {
   return (
     <Paper>
-      <Grid data-testid='actualDayRoot' container direction="row" justify="space-between">
+      <Grid
+        data-testid="actualDayRoot"
+        container
+        direction="row"
+        justify="space-between"
+      >
         <Grid item>
           <Grid container direction="column">
             <Grid item>
-              <Typography data-testid='actualDayCity'  variant="h3">{city}</Typography>
-              <Typography data-testid='actualDayDate' variant="overline">
+              <Typography data-testid="actualDayCity" variant="h3">
+                {city}
+              </Typography>
+              <Typography data-testid="actualDayDate" variant="overline">
                 {dateConverter(date).format("ll") +
                   " / " +
                   dateConverter(date).format("dddd")}
@@ -37,18 +44,32 @@ export default function ActualDay({
           </Grid>
         </Grid>
         <Grid item>
-          <Typography data-testid='actualDayTemperature' variant="h2">
-            {temperatureHelper(actualTemp.toString())}
-          </Typography>
-          <Typography data-testid='actualDayMin' variant="body1" display="inline">
-            {temperatureHelper(min.toString())}
-          </Typography>
-          <Typography variant="body1" display="inline">
-            {" / "}
-          </Typography>
-          <Typography data-testid='actualDayMax' variant="body1" display="inline">
-            {temperatureHelper(max.toString())}
-          </Typography>
+          <Grid container direction="column">
+            <Grid item>
+              <Typography data-testid="actualDayTemperature" variant="h2">
+                {temperatureHelper(actualTemp.toString())}
+              </Typography>
+            </Grid>
+            <Grid item container justify="center">
+              <Typography
+                data-testid="actualDayMin"
+                variant="body1"
+                display="inline"
+              >
+                {temperatureHelper(min.toString())}
+              </Typography>
+              <Typography variant="body1" display="inline">
+                {" / "}
+              </Typography>
+              <Typography
+                data-testid="actualDayMax"
+                variant="body1"
+                display="inline"
+              >
+                {temperatureHelper(max.toString())}
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Paper>
