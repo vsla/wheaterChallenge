@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import ActualDay from "./index";
 import weatherResponse from "mock/weatherResponse.json";
-import temperatureHelper from "helpers/temperatureHelper";
+import { temperatureHelper } from "helpers/temperatureHelper";
 
 const { city_name, date, temp, img_id, forecast } = weatherResponse.results;
 const { min, max } = forecast[0];

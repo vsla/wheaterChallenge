@@ -4,12 +4,18 @@ export interface wheaterInterface {
   date: string;
 }
 
-export type wheaterWeekInterface = wheaterInterface[] | [];
+export type wheaterWeekInterface = {
+  min: number;
+  max: number;
+  date: string;
+  description: string;
+  condition: string;
+};
 
 export type cityInterface = string;
 
 export interface stateInterface {
-  week: Array<wheaterInterface>;
+  week: Array<wheaterWeekInterface>;
   city: cityInterface;
   temp: number;
   date: string;
@@ -41,8 +47,8 @@ export interface weatherResponse {
         // "weekday": "Qua",
         max: number;
         min: number;
-        // "description": "Tempestades",
-        // condition: "storm";
+        description: string;
+        condition: string;
       }>;
     };
   };
@@ -57,3 +63,17 @@ export interface cityVerifyResponse {
     error?: string;
   };
 }
+
+export type conditionInterface =
+  | "storm"
+  | "snow"
+  | "hail"
+  | "rain"
+  | "fog"
+  | "clear_day"
+  | "clear_night"
+  | "cloud"
+  | "cloudly_day"
+  | "cloudly_night"
+  | "none_day"
+  | "none_night";

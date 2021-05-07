@@ -29,7 +29,7 @@ export default function Paper({ children, title = "" }: Props) {
   const classes = useStyles();
   return (
     <MaterialPaper data-testid='paper' elevation={1} className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         {title && (
           <Grid item xs={12}>
             <Typography data-testid='paper-title' className={classes.title} variant="h4" display="inline">{title}</Typography>

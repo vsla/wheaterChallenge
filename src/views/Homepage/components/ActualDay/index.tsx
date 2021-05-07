@@ -2,7 +2,7 @@ import { Grid, Typography } from "@material-ui/core";
 import ClimateImage from "components/ClimateImage";
 import Paper from "components/Paper";
 import { dateConverter } from "helpers/dateHelper";
-import temperatureHelper from "helpers/temperatureHelper";
+import { temperatureHelper } from "helpers/temperatureHelper";
 import { wheaterInterface } from "interfaces";
 
 interface Props {
@@ -46,24 +46,28 @@ export default function ActualDay({
         <Grid item>
           <Grid container direction="column">
             <Grid item>
-              <Typography data-testid="actualDayTemperature" variant="h2">
+              <Typography
+                style={{ fontSize: "5.75rem" }}
+                data-testid="actualDayTemperature"
+                variant="h2"
+              >
                 {temperatureHelper(actualTemp.toString())}
               </Typography>
             </Grid>
             <Grid item container justify="center">
               <Typography
                 data-testid="actualDayMin"
-                variant="body1"
+                variant="h5"
                 display="inline"
               >
                 {temperatureHelper(min.toString())}
               </Typography>
-              <Typography variant="body1" display="inline">
+              <Typography variant="h5" display="inline">
                 {" / "}
               </Typography>
               <Typography
                 data-testid="actualDayMax"
-                variant="body1"
+                variant="h5"
                 display="inline"
               >
                 {temperatureHelper(max.toString())}

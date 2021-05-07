@@ -2,7 +2,6 @@ import axios from "axios";
 
 const {
   REACT_APP_WEATHER_API_URL,
-  REACT_APP_WEATHER_KEY,
   REACT_APP_WEATHER_KEY2,
 } = process.env;
 
