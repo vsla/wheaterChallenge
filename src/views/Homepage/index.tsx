@@ -25,8 +25,8 @@ const useStyles = makeStyles({
     marginBottom: 24,
   },
   contentSelectCity: {
-    display: "flex",
-    justifyContent: "center",
+    // display: "flex",
+    // justifyContent: "center",
     marginBottom: 24,
   },
   loading: {

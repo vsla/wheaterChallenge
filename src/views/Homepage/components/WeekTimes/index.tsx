@@ -1,4 +1,4 @@
-import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { Chart } from "components/Chart";
 import Paper from "components/Paper";
 import { dateConverter } from "helpers/dateHelper";
@@ -7,21 +7,6 @@ import { wheaterWeekInterface, wheaterInterface } from "interfaces";
 interface Props {
   week: wheaterWeekInterface;
 }
-
-const useStyles = makeStyles({
-  title: {
-    position: "relative",
-    "&:after": {
-      content: "''",
-      position: "absolute",
-      width: "75%",
-      backgroundColor: "#6a6a6a",
-      height: "1px",
-      bottom: 0,
-      left: 0,
-    },
-  },
-});
 
 const weekComponent = ({ date, min, max }: wheaterInterface) => {
   return (
@@ -38,23 +23,12 @@ const weekComponent = ({ date, min, max }: wheaterInterface) => {
 };
 
 export default function WeekTimes({ week }: Props) {
-  const classes = useStyles();
-
   return (
     <div>
-      <Paper>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography className={classes.title} variant="h5" display="inline">
-              Semana
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Grid container spacing={1}>
-              {/* {week.map(weekComponent)} */}
-              <Chart />
-            </Grid>
-          </Grid>
+      <Paper title="Semana">
+        <Grid container spacing={1}>
+          {/* {week.map(weekComponent)} */}
+          <Chart />
         </Grid>
       </Paper>
     </div>
