@@ -1,0 +1,105 @@
+{
+  "by": "city_name",
+  "valid_key": true,
+  "results": {
+    "temp": 23,
+    "date": "05/05/2021",
+    "time": "22:40",
+    "condition_code": "28",
+    "description": "Tempo nublado",
+    "currently": "noite",
+    "cid": "",
+    "city": "Recife, PE",
+    "img_id": "28n",
+    "humidity": 83,
+    "wind_speedy": "1.54 km/h",
+    "sunrise": "05:22 am",
+    "sunset": "05:10 pm",
+    "condition_slug": "cloudly_night",
+    "city_name": "Recife",
+    "forecast": [
+      {
+        "date": "05/05",
+        "weekday": "Qua",
+        "max": 26,
+        "min": 23,
+        "description": "Tempestades",
+        "condition": "storm"
+      },
+      {
+        "date": "06/05",
+        "weekday": "Qui",
+        "max": 27,
+        "min": 23,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "07/05",
+        "weekday": "Sex",
+        "max": 27,
+        "min": 23,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "08/05",
+        "weekday": "Sáb",
+        "max": 28,
+        "min": 25,
+        "description": "Ensolarado com muitas nuvens",
+        "condition": "cloudly_day"
+      },
+      {
+        "date": "09/05",
+        "weekday": "Dom",
+        "max": 27,
+        "min": 24,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "10/05",
+        "weekday": "Seg",
+        "max": 27,
+        "min": 24,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "11/05",
+        "weekday": "Ter",
+        "max": 26,
+        "min": 23,
+        "description": "Trovoadas dispersas",
+        "condition": "storm"
+      },
+      {
+        "date": "12/05",
+        "weekday": "Qua",
+        "max": 25,
+        "min": 23,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "13/05",
+        "weekday": "Qui",
+        "max": 26,
+        "min": 23,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "14/05",
+        "weekday": "Sex",
+        "max": 26,
+        "min": 24,
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      }
+    ]
+  },
+  "execution_time": 0.0,
+  "from_cache": true
+}
