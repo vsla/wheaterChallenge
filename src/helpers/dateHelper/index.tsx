@@ -10,14 +10,9 @@ export const dateInitializer = () => {
 export const dateConverter = (date: string) => {
   const dateSplitted = date.split("/");
   if (dateSplitted.length === 2) {
-    const newDate =
-      dateSplitted.reverse().join("/") + "/" + today.getFullYear();
+    const newDate = date + "/" + today.getFullYear();
 
-    return moment(newDate);
-  } else if (dateSplitted.length === 3) {
-    return moment(
-      dateSplitted.slice(0, 2).reverse().join("/") + "/" + dateSplitted[2]
-    );
+    return moment(newDate, "DD/MM/YYYY");
   }
-  return moment(date);
+  return moment(date, "DD/MM/YYYY");
 };

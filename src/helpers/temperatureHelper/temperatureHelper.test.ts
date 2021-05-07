@@ -1,4 +1,4 @@
-import temperatureHelper from "./index";
+import { temperatureHelper } from "./index";
 
 test("temperatureHelper", () => {
   expect(temperatureHelper("23")).toBe("23°C");
