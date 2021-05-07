@@ -18,7 +18,7 @@ interface Props {
 
 export default function CitySelectContainer({ verifyCity, wrongCity }: Props) {
   const classes = useStyles();
-  const [inputValue, setInputValue] = useState("São paulo");
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <Paper title="TempoClima">

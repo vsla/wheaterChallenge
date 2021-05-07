@@ -1,6 +1,6 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
-import { Chart } from "components/Chart";
+import Chart from "components/Chart/index.js";
 import ClimateImage from "components/ClimateImage";
 import Paper from "components/Paper";
 import { dateConverter } from "helpers/dateHelper";
@@ -42,7 +42,7 @@ export default function WeekTimes({ week }: Props) {
     condition,
   }: wheaterWeekInterface) => {
     return (
-      <Grid item>
+      <Grid item key={date}>
         <Grid container direction="column" alignItems="center">
           <Grid item>
             <Typography className={classes.weekDay}>
@@ -87,7 +87,9 @@ export default function WeekTimes({ week }: Props) {
       <Paper title="Semana">
         <Grid container spacing={1} justify="space-around">
           {week.slice(1, 7).map(weekComponent)}
-          <Chart />
+          <Grid item xs={12}>
+            <Chart />
+          </Grid>
         </Grid>
       </Paper>
     </div>
