@@ -87,7 +87,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <Container maxWidth="md">
+    <Container data-testid='homepage-root' maxWidth="md">
       <div className={classes.root}>
         <div className={classes.contentSelectCity}>
           <CitySelect verifyCity={verifyCity} wrongCity={wrongCity} />

@@ -28,11 +28,11 @@ const useStyles = makeStyles({
 export default function Paper({ children, title = "" }: Props) {
   const classes = useStyles();
   return (
-    <MaterialPaper elevation={1} className={classes.root}>
+    <MaterialPaper data-testid='paper' elevation={1} className={classes.root}>
       <Grid container spacing={2}>
         {title && (
           <Grid item xs={12}>
-            <Typography className={classes.title} variant="h4" display="inline">{title}</Typography>
+            <Typography data-testid='paper-title' className={classes.title} variant="h4" display="inline">{title}</Typography>
           </Grid>
         )}
         <Grid item xs={12}>{children}</Grid>

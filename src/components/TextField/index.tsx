@@ -39,8 +39,8 @@ export default function Select({
   const classes = useStyles();
 
   return (
-    <div className={classes.rootTypography}>
-      <Typography>{label + ":"}</Typography>
+    <div data-testid="textfieldContainer" className={classes.rootTypography}>
+      <Typography data-testid="textfieldLabel">{label + ":"}</Typography>
       <MaterialTextField
         id={id ? id : label}
         value={value}
@@ -48,9 +48,15 @@ export default function Select({
         onChange={handleChange}
         variant="outlined"
         onKeyDown={onKeyDown}
+        inputProps={{ "data-testid": "textfield" }}
       />
       {error && (
-        <Typography className={classes.errorMessage}>{errorMessage}</Typography>
+        <Typography
+          data-testid="textfieldError"
+          className={classes.errorMessage}
+        >
+          {errorMessage}
+        </Typography>
       )}
     </div>
   );

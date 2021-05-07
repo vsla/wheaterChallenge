@@ -21,8 +21,8 @@ export default function CitySelectContainer({ verifyCity, wrongCity }: Props) {
   const [inputValue, setInputValue] = useState("São paulo");
 
   return (
-    <Paper title='TempoClima'>
-      <div className={classes.root}>
+    <Paper title="TempoClima">
+      <div data-testid="citySelectroot" className={classes.root}>
         <TextField
           value={inputValue}
           handleChange={(e) => setInputValue(e.target.value)}

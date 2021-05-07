@@ -20,12 +20,12 @@ export default function ActualDay({
 }: Props) {
   return (
     <Paper>
-      <Grid container direction="row" justify="space-between">
+      <Grid data-testid='actualDayRoot' container direction="row" justify="space-between">
         <Grid item>
           <Grid container direction="column">
             <Grid item>
-              <Typography variant="h3">{city}</Typography>
-              <Typography variant="overline">
+              <Typography data-testid='actualDayCity'  variant="h3">{city}</Typography>
+              <Typography data-testid='actualDayDate' variant="overline">
                 {dateConverter(date).format("ll") +
                   " / " +
                   dateConverter(date).format("dddd")}
@@ -37,16 +37,16 @@ export default function ActualDay({
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h2">
+          <Typography data-testid='actualDayTemperature' variant="h2">
             {temperatureHelper(actualTemp.toString())}
           </Typography>
-          <Typography variant="body1" display="inline">
+          <Typography data-testid='actualDayMin' variant="body1" display="inline">
             {temperatureHelper(min.toString())}
           </Typography>
           <Typography variant="body1" display="inline">
             {" / "}
           </Typography>
-          <Typography variant="body1" display="inline">
+          <Typography data-testid='actualDayMax' variant="body1" display="inline">
             {temperatureHelper(max.toString())}
           </Typography>
         </Grid>
