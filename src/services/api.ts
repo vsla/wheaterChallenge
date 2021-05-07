@@ -10,7 +10,7 @@ const api = axios.create({
   baseURL: REACT_APP_WEATHER_API_URL,
   params: {
     format: "json-cors",
-    key: REACT_APP_WEATHER_KEY2,
+    key: "development",
   },
 });
 

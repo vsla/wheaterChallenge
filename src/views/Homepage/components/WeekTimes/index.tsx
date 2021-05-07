@@ -1,4 +1,5 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Chart } from "components/Chart";
 import Paper from "components/Paper";
 import { dateConverter } from "helpers/dateHelper";
 import { wheaterWeekInterface, wheaterInterface } from "interfaces";
@@ -50,7 +51,8 @@ export default function WeekTimes({ week }: Props) {
           </Grid>
           <Grid item>
             <Grid container spacing={1}>
-              {week.map(weekComponent)}
+              {/* {week.map(weekComponent)} */}
+              <Chart />
             </Grid>
           </Grid>
         </Grid>
