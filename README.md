@@ -1,27 +1,24 @@
+
 <!-- <h1 align="center">
   <img alt="TrackingDelivery" title="#TrackingDelivery" src="./Docs/GithubProfile.jpg" style="width:100%;"/>
 </h1> -->
-<h1 align="center">wheaterChallenge</h1>
+<h1 align="center">Employee Manager</h1>
 
-<p align="center">Website para visualização de climas por localidade</p>
+<p align="center">Website to manage employees</p>
 
 <p align="center">
-  <img alt="Forks" src='https://img.shields.io/github/forks/vsla/wheaterChallenge'> 
-  <img alt="Issues" src='https://img.shields.io/github/issues/vsla/wheaterChallenge'> 
-  <img alt="Starts" src='https://img.shields.io/github/stars/vsla/wheaterChallenge'>
+  <img alt="Forks" src='https://img.shields.io/github/forks/vsla/nutcache-challenge-victorAttar'> 
+  <img alt="Issues" src='https://img.shields.io/github/issues/vsla/nutcache-challenge-victorAttar'> 
+  <img alt="Starts" src='https://img.shields.io/github/stars/vsla/nutcache-challenge-victorAttar'>
 </p>
 
 ## Summary
 
-- [Demo](#Demo)
 - [🚀 Stack Used](#-stack-used)
 - [🔖 Libraries Used](#-libraries-used)
 - [⚡ Running the app](#-running-the-app)
 - [📝 License](#-license)
 
-## Demo Live
-
-Still on development
 
 <!-- Running on this [link]() -->
 
@@ -35,10 +32,17 @@ The following tools were used to develop this project:
 
 ## 🔖 Libraries Used
 
-- Material Ui
-- Axios
+- [Material ui](https://mui.com/)
+- [Axios](https://github.com/axios/axios)
+- [Testing-library](https://testing-library.com/)
+- [DayJs](https://day.js.org/)
+- [Formik](https://formik.org/)
 
 ## ⚡ Running the app
+
+First, we need to generate a new Backend Url.
+Get into [CrudCruD website](https://crudcrud.com/) and copy the url generated
+
 
 ```bash
 # Clonning the repo
@@ -46,6 +50,10 @@ $ git clone
 
 # Install all the dependencies
 $ yarn install
+
+# Create a file name .env and add this variable to .env file
+# Have one .env.example on the project, just use this model
+REACT_APP_API_CRUD_CRUD="CrudCrudUrlGenerated"
 
 # Run the project
 $ yarn run
