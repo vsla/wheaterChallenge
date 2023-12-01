@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wheaterChallenge/static/css/main.66b2ca25.css",
+    "main.js": "/wheaterChallenge/static/js/main.6cd478fc.js",
+    "index.html": "/wheaterChallenge/index.html",
+    "main.66b2ca25.css.map": "/wheaterChallenge/static/css/main.66b2ca25.css.map",
+    "main.6cd478fc.js.map": "/wheaterChallenge/static/js/main.6cd478fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b2ca25.css",
+    "static/js/main.6cd478fc.js"
+  ]
+}
