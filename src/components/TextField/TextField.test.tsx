@@ -4,7 +4,7 @@ import Textfield from "./index";
 
 const TestInput = () => {
   const [value, setValue] = useState("");
-  const sendInput = (e) => {
+  const sendInput = (e:React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       console.log(value);
     }
