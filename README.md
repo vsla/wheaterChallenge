@@ -13,7 +13,6 @@
 
 ## Summary
 
-- [Demo](#Demo)
 - [🚀 Stack Used](#-stack-used)
 - [🔖 Libraries Used](#-libraries-used)
 - [⚡ Running the app](#-running-the-app)
